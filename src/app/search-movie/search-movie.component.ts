@@ -3,16 +3,6 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AbstractControl, ValidationErrors } from '@angular/forms';
 
-interface SearchForm {
-  idTitleGroup: {
-    identifiant: string;
-    titre: string;
-  };
-  type: string;
-  anneeSortie: number;
-  fiche: string;
-}
-
 @Component({
   selector: 'search-movie',
   standalone: true,
